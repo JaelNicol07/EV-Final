@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap');
+
+
+/* Estilos generales para los encabezados */
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-align: center;
+    margin: 0 25px 15px 5px;
+    padding: 0 0 10px;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: "Playwrite RO", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    text-align: justify;
+    margin: 0 15px 15px 5px;
+    padding: 0 0 10px 12px;
+    font-size: 14px;
+}
+
+/* Estilo para los botones */
+.grid-container-derecho button,
+.grid-container-izquierdo button,
+.button-p {
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #857149;
+    border: none;
+    font-size: "Open Sans", sans-serif;
+    color: #1d1c1c;
+}
+
+.button-p:hover,
+button:hover {
+    background-color: #ad9564;
+}
+
+/* Estilo para los contenedores de cuadrícula */
+.grid-container-izquierdo,
+.grid-container-derecho {
+    background-color: #a39779;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 5px; /* Espacio entre columnas */
+    align-items: center; /* Alinea el contenido verticalmente */
+    padding: 20px; /* Espaciado alrededor del contenedor */
+}
+
+/* Estilo del contenido de texto */
+.text-content {
+    text-align: justify;
+}
+
+/* Estilo de la imagen */
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2 ease ;
+    transform-origin: center center;
+    cursor: pointer;
+}
+.image-content{
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+.image-content:hover img{
+    transform: scale(1.2);
+}
+/* Estilo del checkbox para mostrar/ocultar contenido */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Estilo para el contenido que se muestra/oculta */
+.toggle-content-buffet,
+.toggle-content-desayuno,
+.toggle-content-almuerzo,
+.toggle-content-cocteles,
+.toggle-content-coffee{
+    display: none;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Mostrar el contenido asociado al checkbox */
+.buffet:checked ~ .toggle-content-buffet,
+.desayuno:checked ~ .toggle-content-desayuno,
+.cocteles:checked ~ .toggle-content-cocteles,
+.almuerzo:checked ~ .toggle-content-almuerzo,
+.coffee-break:checked ~ .toggle-content-coffee {
+    display: grid;
+}
+
+/* Estilo de los elementos en la cuadrícula */
+.grid-item {
+    background-color: #d9d4c4;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los encabezados dentro de los elementos de cuadrícula */
+.grid-item h4 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+/* Estilo de los párrafos dentro de los elementos de cuadrícula */
+.grid-item p {
+    margin: 0;
+}
+
+/* Estilo de las listas dentro de los elementos de cuadrícula */
+.grid-item ul li {
+    font-size: 15px;
+}
+
+/* Estilo del label para el checkbox */
+.button-p,
+button {
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #857149;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para el formulario */
+.container-formulario {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* 1 parte para la info y 2 partes para el formulario */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.info-section,
+.form-section {
+    background-color: #AD9F82;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2,
+.form-section h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group .label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group .input,
+.form-group .select,
+.form-group .textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group .textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.form-group .button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #857149;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-group .button:hover {
+    background-color: #ad9564;
+}
+
+@media (max-width: 768px) {
+    .container-formulario,
+    .container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 23px;
+      }
+    
+      p{
+        font-size: 16px;
+      }
+      .grid-container-derecho, .grid-container-izquierdo {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+  
+    .image-content img {
+        margin: 0 auto; /* Centra la imagen en pantallas pequeñas */
+    }
+
+    
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 25px;
+        padding-left: 25px;
+      }
+      .grid-container-derecho, .grid-container-izquierdo {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+  
+    .image-content img {
+        margin: 0 auto; /* Centra la imagen en pantallas pequeñas */
+    }
+      button{
+        font-size: 15px;
+        margin-left: 20px;
+        padding: 8px;
+      }
+      button:hover{
+        background-color: #ad9564;
+    }
+    
+}
+@media (min-width: 1600px){
+    p{
+        font-size: 18px;
+    }
+}

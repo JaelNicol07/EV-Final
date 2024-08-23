@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap');
+
+h3{
+  font-family: "Playwrite RO", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 23px;
+  padding-left: 8px;
+  padding-top: 10px;
+}
+p{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      text-align: justify;
+      margin: 0px 15px 15px 5px; 
+      padding: 0px 0px 10px;
+      font-size: 13px;
+}
+/* Contenedor del grid */
+.grid-container-mision, .grid-container-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  gap: 20px; /* Espacio entre columnas */
+  align-items: center; /* Alinea el contenido verticalmente */
+  padding: 20px; /* Espaciado alrededor del contenedor */
+}
+.grid-container-mision{
+  background-color: #b9ab8e;
+}
+.grid-container-vision{
+  background-color: #8d7e54;
+}
+/* Estilo del contenido de texto */
+.text-content {
+  /* Ajusta el estilo según tus necesidades */
+  text-align: justify;
+}
+
+/* Estilo del contenido de la imagen */
+.image-content img {
+  width: 100%; /* La imagen se ajusta al ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; 
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.2 ease ;
+  transform-origin: center center;
+  cursor: pointer;
+}
+.image-content{
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+.image-content:hover img{
+  transform: scale(1.2);
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    h3{
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 20px;
+      }
+      .grid-container-mision, .grid-container-vision {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+  
+    .image-content img {
+        margin: 0 auto; /* Centra la imagen en pantallas pequeñas */
+    }
+  }
+
+@media (min-width: 769px) and (max-width: 1024px){
+    h3{
+        font-size: 20px;
+        padding-top: 20px;
+        padding-left: 25px;
+      }
+      
+}
+@media (min-width: 1400px){
+    p{
+        font-size: 16px;
+    }
+}
+@media (min-width: 1900px){
+    p{
+        font-size: 19px;
+    }
+}

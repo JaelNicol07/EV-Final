@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap');
+
+
+/* carrusel */
+.slider{
+    /* width: 1349px; */
+    overflow: hidden;
+    margin: 0 auto;
+    border: 1px solid rgb(158, 154, 154);
+}
+.slides{
+    display: flex;
+    width: 80%;
+    animation-name: carrusel;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+.slide{
+    width: 1200px;
+}
+.slide img{
+    height: 350px;
+    display: block;
+}
+@keyframes carrusel{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-100%);}
+}
+/* tablas */
+table, td{
+    border: 3px solid #eec676 ;
+    border-collapse: collapse;
+    background-color: rgb(173, 156, 156);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+}
+h3{
+    font-family: "Playwrite RO", cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 15px;
+  padding-left: 10%;
+  
+}
+h2{
+    font-family: "Playwrite RO", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 20px;  
+    text-align: center;
+}
+td{
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.menu{
+    justify-content: center;
+    align-items: center;
+}
+table{
+    padding: auto;
+    width: 45%;
+}
+
+.elipse1 {
+    background-color: #eec676;
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 35px;
+    border-radius: 50%;
+    border: 1px solid ;
+    animation-name: menu1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes menu1{
+    20%{background-image: url(/img/alitas\ a\ la\ bbq.png);}
+    40%{background-image: url(/img/papa\ a\ la\ huancaina.png);}
+    60%{background-image: url(/img/leche\ de\ tigre.png);}
+    80%{background-image: url(/img/tequeños.png);}
+    100%{background-image: url(/img/caldo\ de\ pollo.png);}
+    
+}
+
+.elipse2{
+    background-color: #eec676;
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 5px;
+    border-radius: 100%;
+    border: 1px solid ;
+    animation-name: menu2;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+}
+@keyframes menu2{
+    25%{background-image: url(/img/ceviche\ de\ filete.png);}
+    50%{background-image: url(/img/ceviche\ de\ conchas\ negras.png);}
+    75%{background-image: url(/img/ceviche\ de\ caballa.png);}
+    100%{background-image: url(/img/ceviche\ de\ pota.png);}
+    
+}
+.elipse3{
+    background-color: #eec676;
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 50px;
+    border-radius: 100%;
+    border: 1px solid ;
+    animation-name: menu3;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+}
+@keyframes menu3{
+    16%{background-image: url(/img/arroz\ con\ mariscos.png);}
+    32%{background-image: url(/img/chaufa.png);}
+    48%{background-image: url(/img/lomo\ saltado.png);}
+    64%{background-image: url(/img/tallarin\ saltado.png);}
+    82%{background-image: url(/img/aeropuerto.jpg.png);}
+    100%{background-image: url(/img/seco\ de\ chabelo.png);}
+}
+.elipse4{
+    background-color: #eec676;
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 50px;
+    border-radius: 100%;
+    border: 1px solid ;
+    animation-name: menu4;
+    animation-duration: 28s;
+    animation-iteration-count: infinite;
+}
+@keyframes menu4{
+    20%{background-image: url(/img/inca\ kola.png);}
+    40%{background-image: url(/img/jugo\ de\ papaya.png);}
+    60%{background-image: url(/img/chicha\ morada.png);}
+    80%{background-image: url(/img/jugo\ de\ piña.png);}
+    100%{background-image: url(/img/jugo\ de\ maracuya.png);}
+}
+.elipse5{
+    background-color: #eec676;
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 50px;
+    border-radius: 100%;
+    border: 1px solid ;
+    animation-name: menu5;
+    animation-duration: 28s;
+    animation-iteration-count: infinite;
+}
+@keyframes menu5{
+    16%{background-image: url(/img/Lasagna.webp.png);}
+    32%{background-image: url(/img/Risotto.png);}
+    48%{background-image: url(/img/Pasta\ a\ la\ boloñesa.png);}
+    64%{background-image: url(/img/espaguetti\ a\ la\ carbonara.png);}
+    84%{background-image: url(/img/Fish\ and\ chips.png);}
+    100%{background-image: url(/img/lunch.png);}
+}
+/* footer */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+footer{
+    font-family: sans-serif;
+
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer{
+    background-color: #6E6658;
+    padding: 80px 0;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-row h4{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 18px;
+    font-weight: 500;
+    border-bottom: 2px solid #77A6ED;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.footer-links ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: azure;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover{
+    color: white;
+    padding-left: 2px;
+}
+.social-links a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: #494742;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(4, 130, 248);
+    transition: all .5s ease;
+}
+.social-links a:hover{
+    background-color: #AD9F82;
+}
+/* fin del footer */
+
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        text-align: center; /* Centra el texto */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; /* Espacio entre elementos */
+    }
+
+    .dropdown-menu {
+        position: static; /* Ajuste para dropdown en dispositivos móviles */
+        background-color: #eec676; /* Color de fondo del dropdown */
+        border: 1px solid
+    }
+    
+    .elipse1, .elipse2, .elipse3, .elipse4, .elipse5{
+        display: none;
+    }
+    table, td{
+        margin-left: 70px;
+    }
+    h3{
+      font-size: 20px;
+      
+    }
+    h2{
+        font-size: 30px;  
+    }
+    td{
+        font-size: 14px;
+    }
+    table{
+        width: 70%;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px){
+    table, td{
+        margin-left: 100px;
+    }
+    h3{
+      font-size: 20px;
+      
+    }
+    h2{
+        font-size: 30px;  
+        text-align: center;
+    }
+    td{
+        font-size: 14px;
+    }
+    table{
+        width: 45%;
+    }
+    .elipse1 {
+        margin-top: 5px;
+    }
+    .elipse2{
+        margin-top: 0px;
+    }
+}

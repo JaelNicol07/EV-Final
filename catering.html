@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering</title>
+    <link rel="stylesheet" href="css/catering.css">
+    <link rel="stylesheet" href="css/estilosgenerales.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-custom">
+    <a class="navbar-brand" href="#">
+        <img src="img/Logo -restaurant.png" alt="Logo" height="40" class="img-fluid">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Menú</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Servicios
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown" class="bg-custom3">
+                    <a class="dropdown-item" href="delivery.html">Delivery</a>
+                    <a class="dropdown-item" href="catering.html">Catering</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<body class="bg-custom2">
+ <h2>Nuestros servicios de catering</h2>
+<section class="grid-container-izquierdo">
+    <div class="image-content">
+        <img src="img/buffet-criollo.jpg" alt="">
+    </div>
+    <div class="text-content">
+        <h3>Buffet Criollo</h3>
+        <p>
+            En un ambiente vibrante y acogedor, nuestro buffet criollo peruano te transporta a través de los sabores emblemáticos de la gastronomía peruana. Desde la primera vista, te reciben los colores vivos y la decoración inspirada en la cultura peruana, creando un ambiente festivo y cálido. 
+            Las estaciones están llenas de platos tradicionales como el ceviche fresco, aromático ají de gallina, el sabroso lomo saltado, y la exquisita causa limeña. No falta la variedad de anticuchos, deliciosos tamales, y la irresistible chicha morada para completar tu experiencia culinaria. 
+            Cada bocado es un viaje por los sabores únicos de Perú, preparados con ingredientes frescos y auténticos que reflejan la rica diversidad gastronómica del país. Acompañado de música peruana en vivo y el cálido servicio de nuestro personal, nuestro buffet criollo peruano te invita a disfrutar de una experiencia inolvidable que celebra la pasión y la tradición de la cocina peruana. 
+        </p>
+        <label for="buffet-criollo-options"  class="button-p">Ver propuestas</label>
+        <button><a href="#form" style="text-decoration: none; color: inherit;">Quiero este servicio</a></button>
+    </div>
+</section>
+ 
+<!-- Checkbox para mostrar/ocultar contenido -->
+<input type="checkbox" id="buffet-criollo-options" class="buffet">
+
+<!-- Sección de grids para buffet criollo -->
+<div class="toggle-content-buffet" id="buffet-criollo-options-content">
+    <div class="grid-item">
+     <h4>Buffet Criollo Básico</h4>
+     <ul><b>Entradas:</b>
+         <li> Ceviche de pescado</li>
+         <li>Papa a la Huancaina</li>
+     </ul> 
+     <ul><b>Platos Principales:</b>
+          <li>Lomo Saltado</li>
+          <li>Ají de Gallina</li>
+          <li>Arroz con Pollo</li>
+          <li>Causa Limeña</li>
+     </ul>
+     <ul><b>Acompañamientos:</b>
+         <li>Ensalada Mixta</li>
+         <li>Papas Fritas</li>
+     </ul>
+     <ul><b>Presentación:</b>
+         <li>Servicio en envases descartables</li>
+     </ul>
+        <b>Opción Adicional:</b> Presentación en ollas de barro con movilidad de recojo
+    </div>
+    <div class="grid-item">
+     <h4> Buffet Criollo Premium</h4> 
+     <ul><b>Entradas:</b>
+         <li>Ceviche de pescado</li>
+         <li>Tiraditos de pescado</li>
+         <li>Papa a la Huancaina</li>
+         <li>Anticuchos de Corazón</li>
+     </ul>
+     <ul><b>Platos Principales:</b>
+         <li>Lomo Saltado</li>
+         <li>Ají de Gallina</li>
+         <li>Seco de Cordero</li>
+         <li>Arroz con Mariscos</li>
+         <li>Causa Limeña</li>
+     </ul>
+     <ul><b>Acompañamientos:</b>
+         <li>Ensalada Criolla</li>
+         <li>Papas Huancaina</li>
+         <li>Tacu Tacu</li>
+     </ul>
+     <ul><b>Presentación:</b>
+         <li>Servicio en envases elegantes con cubiertos y platos de cerámica</li>
+     </ul>
+     <b>Opción Adicional:</b> Servicio de camareros y estaciones de comida en vivo
+    </div>
+    <div class="grid-item">
+     <h4>Buffet Criollo Gourmet</h4> 
+     <ul><b>Entradas:</b>
+         <li>Ceviche de pescado con rocoto y cilantro fresco</li>
+         <li>Tiraditos con salsa de maracuyá</li>
+         <li>Papa a la Huancaina con huevo de codorniz</li>
+         <li>Anticuchos de Corazón con salsa de ají panca</li>
+     </ul> 
+     <ul><b>Platos Principales:</b>
+         <li>Lomo Saltado con papas nativas</li>
+         <li>Ají de Gallina con puré de papa amarilla</li>
+         <li>Seco de Cordero con frejoles</li>
+         <li>Arroz con Mariscos y salsa de ají amarillo</li>
+         <li>Causa Limeña con relleno de camarones y palta</li>
+     </ul>
+     <ul><b>Acompañamientos:</b>
+         <li>Ensalada de Quinoa con verduras frescas</li>
+         <li>Papas Huancaina con aceitunas negras</li>
+         <li>Tacu Tacu con salsa de cebolla y ají</li>
+     </ul> 
+     <ul><b>Postres:</b>
+         <li>Suspiro Limeño</li>
+         <li>Mazamorra Morada</li>
+         <li>Picarones con miel de chancaca</li>
+     </ul>
+     <ul><b>Presentación:</b>
+         <li>Servicio en vajilla de porcelana y cubiertos de acero inoxidable</li>
+         <li>Decoración temática con elementos peruanos</li>
+     </ul>
+     <b>Pedido Mínimo:</b> 10 personas <br>
+     <b>Opción Adicional:</b> Chef en vivo preparando algunos platos y estación de cocteles peruanos
+    </div>
+    <div class="grid-item">
+     <h4>Buffet Criollo para Eventos Corporativos</h4>
+     <ul><b>Entradas:</b>
+         <li>Ceviche de pescado con crotones de camote</li>
+         <li>Papa a la Huancaina en mini porciones</li>
+         <li>Empanadas de carne</li>
+     </ul>
+     <ul><b>Platos Principales:</b>
+         <li>Lomo Saltado con arroz blanco</li>
+         <li>Ají de Gallina con papa y arroz</li>
+         <li>Arroz con Mariscos con presentación individual</li>
+         <li>Causa Limeña en porciones individuales</li>
+     </ul>
+     <ul><b>Acompañamientos:</b>
+         <li>Ensalada César</li>
+         <li>Papas Fritas</li>
+     </ul>
+     <ul><b>Postres:</b>
+         <li>Suspiro Limeño en copas individuales</li>
+         <li>Brownies con sabor a café</li>
+     </ul> 
+     <ul><b>Presentación:</b>
+         <li>Servicio en bandejas elegantes y utensilios desechables de alta calidad</li>
+     </ul>
+     <b>Opción Adicional:</b> Servicio de bar y cocteles temáticos
+    </div>
+    <div class="grid-item">
+     <h4>Buffet Criollo para Celebraciones Especiales</h4> 
+     <ul><b>Entradas:</b>
+         <li>Ceviche de pescado con chicha morada</li>
+         <li>Tiraditos de pescado con salsa de ají amarillo</li>
+         <li>Papa a la Huancaina con aceitunas y huevo</li>
+         <li>Anticuchos de Corazón con salsa de ajo</li>
+     </ul> 
+     <ul><b>Platos Principales:</b>
+         <li>Lomo Saltado con arroz y papas fritas</li>
+         <li>Ají de Gallina con arroz y puré de papa</li>
+         <li>Seco de Cordero con arroz y frijoles</li>
+         <li>Arroz con Mariscos con verduras frescas</li>
+         <li>Causa Limeña con relleno de palta y camarones</li>
+     </ul> 
+     <ul><b>Acompañamientos:</b>
+         <li>Ensalada Criolla con ají limo</li>
+         <li>Papas a la Huancaina</li>
+         <li>Tacu Tacu con salsa de cebolla y ají</li>
+     </ul>
+     <ul><b>Postres:</b>
+         <li>Suspiro Limeño con decoración especial</li>
+         <li>Mazamorra Morada con trozos de frutas frescas</li>
+         <li>Picarones con miel de chancaca</li>
+     </ul>
+     <ul><b>Presentación:</b>
+         <li>Servicio completo con camareros y mesas decoradas</li>
+         <li>Vajilla de porcelana y cubiertos de acero inoxidable</li>
+         <li>Decoración temática con elementos peruanos</li>
+     </ul> 
+     <b>Opción Adicional:</b> Música en vivo y entretenimiento cultural
+    </div>
+</div>
+     <br>
+    <section class="grid-container-derecho">
+        <div class="text-content">
+         <h3>Desayunos</h3>
+         <p>
+            Nuestro servicio de desayunos de catering está diseñado para comenzar el día con elegancia y comodidad. Desde la frescura de los jugos naturales y la variedad de frutas tropicales hasta la calidez de los panes recién horneados y la selección de embutidos y quesos artesanales, cada detalle está cuidadosamente preparado para satisfacer los gustos más exigentes. Nuestro equipo se encarga de que cada bandeja y estación esté impecablemente presentada, asegurando que cada invitado disfrute de una experiencia gastronómica deliciosa y nutritiva. Ya sea para reuniones corporativas, eventos privados o celebraciones especiales, nuestro servicio de desayunos de catering ofrece la combinación perfecta de calidad, sabor y atención personalizada que garantiza un comienzo de día memorable y lleno de energía.
+         </p>
+         <label for="desayuno-options"  class="button-p">Ver propuestas</label>
+          <button><a href="#form" style="text-decoration: none; color: inherit;">Quiero este servicio</a></button>
+        </div>
+        <div class="image-content">
+         <img src="img/Desayunos.webp" alt="" >
+        </div>
+   </section>
+<!-- Checkbox para mostrar/ocultar contenido -->
+<input type="checkbox" id="desayuno-options" class="desayuno">
+
+<!-- Sección de grids para buffet criollo -->
+<div class="toggle-content-desayuno" id="desayuno-options-content">
+    <div class="grid-item">
+        <h4>Desayuno Tradicional Peruano</h4>
+        <ul>
+            <li><b>Plato Principal:</b>Tamales (hechos de maíz y rellenos de carne de cerdo o pollo).</li>
+            <li><b>Acompañamientos:</b> Pan con palta (pan con aguacate), queso fresco.</li>
+            <li><b>Frutas:</b> Macedonia de frutas con mango, piña, y plátano.</li>
+            <li><b>Bebidas:</b> Jugo de naranja natural, y café peruano.</li>
+        </ul>
+   </div>
+    <div class="grid-item">
+        <h4>Desayuno Marítimo</h4>
+        <ul>
+            <li><b>Plato Principal:</b>Causa limeña (puré de papa amarilla con relleno de atún o pollo).</li>
+            <li><b>Acompañamientos:</b> Pan de maíz (arepas de maíz), tostadas con palta.</li>
+            <li><b>Frutas:</b> Ensalada de frutas con aguacate, piña y maracuyá.</li>
+            <li><b>Bebidas:</b> Jugo de piña o mango, y café peruano.</li>
+        </ul>
+    </div>
+    <div class="grid-item">
+     <h4>Desayuno Clásico Americano</h4>
+     <ul>
+         <li><b>Platos principales:</b> Huevos revueltos, bacon, salchichas, y pancakes con jarabe de arce.</li>
+         <li><b>Acompañamientos:</b> Tostadas con mantequilla y mermelada, hash browns.</li>
+         <li><b>Frutas:</b> Una mezcla de frutas frescas como melón, fresas y arándanos.</li>
+         <li><b>Bebidas:</b> Café, té, jugo de naranja y leche.</li>
+     </ul>
+     
+    </div>
+    <div class="grid-item">
+     <h4>Desayuno Continental</h4> 
+     <ul>
+         <li><b>Platos principales:</b> Croissants, panes de chocolate, y panes variados (bagels, muffins).</li>
+         <li><b>Acompañamientos:</b> Mantequilla, mermeladas, y queso crema.</li>
+         <li><b>Frutas:</b> Frutas frescas y en trozos (kiwis, uvas, manzanas).</li>
+         <li><b>Bebidas:</b> Café, té, jugo de manzana y agua.</li>
+     </ul>
+    </div>
+    <div class="grid-item">
+     <h4>Desayuno Saludable</h4> 
+     <ul>
+         <li><b>Platos principales:</b> Yogur natural con granola y miel, avena con frutas.</li>
+         <li><b>Acompañamientos:</b> Pan integral con aguacate, huevos pochados.</li>
+         <li><b>Frutas:</b>Ensalada de frutas con kiwi, plátano y fresas.</li>
+         <li><b>Bebidas:</b>Jugo de papaya, café o té verde.</li>
+     </ul> 
+    </div>
+    <div class="grid-item">
+        <h4>Desayuno Gourmet</h4> 
+        <ul>
+            <li><b>Plato principal:</b> Omelette con ingredientes peruanos (queso fresco, ají amarillo, y hierbas).</li>
+            <li><b>Acompañamientos:</b>Pan de yema con mantequilla y mermelada de maracuyá.</li>
+            <li><b>Frutas:</b>Frutas exóticas como lucuma y aguaymanto.</li>
+            <li><b>Bebidas:</b>Mimosas (con jugo de maracuyá), café gourmet, y té de hierbas.</li>
+        </ul> 
+    </div>
+</div>
+    <br>
+    <section class="grid-container-izquierdo">
+        <div class="image-content">
+         <img src="img/Almuerzos y cenas.jpg" alt="" >
+        </div>
+        <div class="text-content">
+         <h3>Almuerzos y Cenas</h3>
+         <p>
+            Nuestro servicio de almuerzos y cenas de catering combina la exquisitez culinaria con la comodidad y el profesionalismo que necesitas para tus eventos. Desde la primera consulta hasta el último plato servido, nos comprometemos a ofrecerte una experiencia gastronómica inolvidable. Nuestro menú diverso y flexible incluye opciones que van desde platos gourmet hasta especialidades locales, adaptándose a todos los gustos y requerimientos dietéticos. Cada comida se prepara con ingredientes frescos y de la más alta calidad, garantizando sabores auténticos y presentaciones impecables. Ya sea para reuniones corporativas, bodas elegantes o celebraciones íntimas, nuestro equipo experto se encarga de todos los detalles logísticos para que puedas disfrutar de cada momento junto a tus invitados. Con un servicio de primera clase y un compromiso con la excelencia, estamos aquí para hacer de tu evento un éxito rotundo.
+         </p>
+         <label for="almuerzo-cena-options"  class="button-p">Ver propuestas</label>
+          <button><a href="#form" style="text-decoration: none; color: inherit;">Quiero este servicio</a></button>
+     </div>
+    </section>
+<!-- Checkbox para mostrar/ocultar contenido -->
+<input type="checkbox" id="almuerzo-cena-options" class="almuerzo">
+
+<!-- Sección de grids para buffet criollo -->
+<div class="toggle-content-almuerzo" id="almuerzo-cena-options-content">
+    <div class="grid-item">
+        <h4>Almuerzo Peruano Clásico</h4>
+        <ul><b>Entradas:</b>
+            <li>Ceviche de Pescado</li>
+            <li>Anticuchos de Corazón</li>
+        </ul>
+        <ul><b>Platos Principales</b>
+            <li>Lomo Saltado</li>
+            <li>Ají de Gallina</li>
+        </ul>
+        <ul><b>Acompañamientos</b>
+            <li>Papa a la Huancaina</li>
+            <li>Ensalada Criolla:</li>
+        </ul>
+        <ul><b>Postres:</b>
+            <li>Suspiro a la Limeña</li>
+            <li>Mazamorra Morada</li>
+        </ul>
+        <ul><b>Bebidas:</b>
+            <li>Chicha Morada</li>
+            <li>Jugo de piña</li>
+        </ul>
+   </div>
+   <div class="grid-item">
+        <h4>Almuerzo internacional</h4>
+        <ul><b>Entradas:</b>
+            <li>Bruschettas</li>
+            <li>Rollitos de primavera</li>
+        </ul>
+        <ul><b>Platos Principales</b>
+            <li>Paella de Mariscos</li>
+            <li>Pollo al Horno con Hierbas</li>
+        </ul>
+        <ul><b>Acompañamientos</b>
+            <li>Ensalada Cesar</li>
+            <li>Vegetales Asados</li>
+        </ul>
+        <ul><b>Postres:</b>
+            <li>Tarta de Frutas</li>
+            <li>Brownies</li>
+        </ul>
+        <ul><b>Bebidas:</b>
+            <li>Limonada</li>
+            <li>Agua mineral</li>
+        </ul>
+    </div>
+    <div class="grid-item">
+     <h4>Cena Peruana Gourmet</h4>
+     <ul><b>Entradas:</b>
+         <li>Causa Limeña</li>
+         <li>Tartaletas de quinua</li>
+     </ul>
+     <ul><b>Platos Principales</b>
+         <li>Rocoto Relleno</li>
+         <li>Arroz con Mariscos</li>
+     </ul>
+     <ul><b>Acompañamientos</b>
+         <li>Ensalada de Espinacas con Queso de Cabra</li>
+         <li>Papa a la Huancaina</li>
+     </ul>
+     <ul><b>Postres:</b>
+         <li>Tarta de Lucuma y Chocolate</li>
+         <li>Helado de Maracuya</li>
+     </ul>
+     <ul><b>Bebidas:</b>
+         <li>Cocteles de Pisco Sur</li>
+         <li>Jugo de Maracuya</li>
+     </ul>
+    </div>
+    <div class="grid-item">
+        <h4>Cena Internacional Elegante</h4>
+        <ul><b>Entradas:</b>
+            <li>Ensalada Caprese</li>
+            <li>Sopa de Champiñones</li>
+        </ul>
+        <ul><b>Platos Principales</b>
+            <li>Filete de Res a la Parrilla</li>
+            <li>Salmon al Horno con Eneldo</li>
+        </ul>
+        <ul><b>Acompañamientos</b>
+            <li>Ensalada de Rucula y Pera</li>
+            <li>Graatinado de Papas</li>
+        </ul>
+        <ul><b>Postres:</b>
+            <li>Tiramisu</li>
+            <li>Cheesecake de Frambuesa</li>
+        </ul>
+        <ul><b>Bebidas:</b>
+            <li>Vino Tinto o Blanco</li>
+            <li>Cocteles internacionales</li>
+        </ul>
+    </div>
+</div>
+    <br>
+    <section class="grid-container-derecho">
+        <div class="text-content">
+         <li><h3>Cocteles</h3></li>
+         <p>
+            Nuestro servicio de cócteles de catering transforma cualquier ocasión en un evento elegante y memorable. Desde recepciones corporativas hasta fiestas privadas, nos especializamos en ofrecer una experiencia de cócteles que combina creatividad, calidad y profesionalismo. Nuestro equipo experto en mixología prepara una variedad de bebidas artesanales, desde clásicos como el mojito y el martini hasta creaciones únicas inspiradas en sabores locales y tendencias internacionales. Además, nuestra selección de vinos y champagnes complementa perfectamente cada cóctel y mejora la experiencia gastronómica. Con atención meticulosa a los detalles y un servicio impecable, nos aseguramos de que cada invitado disfrute de una experiencia de cócteles excepcional, marcada por el ambiente festivo y la elegancia que caracteriza nuestros eventos.
+         </p>
+         <label for="cocteles-options" class="button-p">Ver propuestas</label>
+         <button><a href="#form" style="text-decoration: none; color: inherit;">Quiero este servicio</a></button>
+      </div>
+        <div class="image-content">
+         <img src="img/cocteles.jpg" alt="" >
+        </div>
+    </section>
+<!-- Checkbox para mostrar/ocultar contenido -->
+<input type="checkbox" id="cocteles-options" class="cocteles">
+
+<!-- Sección de grids para buffet criollo -->
+<div class="toggle-content-cocteles" for="cocteles-options-content">
+    <div class="grid-item">
+        <h4>Cocteles Clasicos</h4>
+        <ul><b>Cocteles:</b>
+            <li>Mojito</li>
+            <li>Margarita</li>
+            <li>Martini</li>
+            <li>Bloody Mary</li>
+            <li>Manhattan</li>
+        </ul>
+        <ul><b>Bocadillos</b>
+            <li>Mini Brochetas Caprese</li>
+            <li>Canapes de Salmon Ahumado</li>
+            <li>Empanaditas</li>
+        </ul>
+        <ul><b>Acompañamientos</b>
+            <li>Aceitunas y Encurtidos</li>
+            <li>Nuez y Almendras</li>
+            <li>Pan de Ajo</li>
+        </ul>
+        <ul><b>Postres:</b>
+            <li>Brownies</li>
+            <li>Mini Tartaletas de Fruta</li>
+        </ul>
+   </div>
+   <div class="grid-item">
+        <h4>Cocteles Tropicales</h4>
+        <ul><b>Cocteles:</b>
+            <li>Piña Colada</li>
+            <li>Daiquiri de Fresa</li>
+            <li>Mai Tai</li>
+            <li>Mango Mojito</li>
+        </ul>
+        <ul><b>Bocadillos</b>
+            <li>Ceviche de Camaron</li>
+            <li>Mini Tacos de Pescado</li>
+            <li>Brochetas de Frutas Tropicales</li>
+        </ul>
+        <ul><b>Acompañamientos</b>
+            <li>Chips de Platano</li>
+            <li>Salsa y Guacamole</li>
+            <li>Mini Empanadas de Queso</li>
+        </ul>
+        <ul><b>Postres:</b>
+            <li>Mousse de Maracuya</li>
+            <li>Helado de Coco</li>
+        </ul>
+    </div>
+    <div class="grid-item">
+        <h4>Cocteles Peruanos</h4>
+        <ul><b>Cocteles:</b>
+            <li>Pisco Sur</li>
+            <li>Chilcano</li>
+            <li>Pisco Punch</li>
+            <li>Maracuya Sour</li>
+            <li>Peruvian Mule</li>
+        </ul>
+        <ul><b>Bocadillos</b>
+            <li>Choclo con Queso</li>
+            <li>Papa a la Huancaina</li>
+        </ul>
+        <ul><b>Acompañamientos</b>
+            <li>Causa Limeña en Minuatura</li>
+            <li>Anticuchos de pollo</li>
+            <li>Frutas Frescas</li>
+        </ul>
+        <ul><b>Postres:</b>
+            <li>Suspiro a la Limeña</li>
+            <li>Helado de Lucuma</li>
+        </ul>
+    </div>
+    <div class="grid-item">
+        <h4>Cocteles Internacionales</h4>
+        <ul><b>Cocteles:</b>
+            <li>Sangría</li>
+            <li>Bellini</li>
+            <li>Negroni</li>
+            <li>Margarita de Tamarindo</li>
+        </ul>
+        <ul><b>Bocadillos</b>
+            <li>Tapas Variadas</li>
+            <li>Mini Quiches</li>
+            <li>Samosas</li>
+        </ul>
+        <ul><b>Acompañamientos</b>
+            <li>Crostinis</li>
+            <li>Hummus y Pan de Pita</li>
+        </ul>
+        <ul><b>Postres:</b>
+            <li>Panna Cotta</li>
+            <li>Mini Eclairs</li>
+        </ul>
+    </div>
+</div>
+    <br>
+    <section class="grid-container-izquierdo">
+        <div class="image-content">
+            <img src="img/Coffee Break.jpg" alt="" >
+        </div>
+        <div class="text-content">
+            <h3>Coffee Break</h3>
+            <p>
+                Nuestro servicio de coffee break ofrece una experiencia gastronómica excepcional, ideal para cualquier reunión o evento. En nuestro restaurante, nos enorgullece presentar una cuidada selección de cafés premium y tés aromáticos, acompañados de una deliciosa variedad de repostería fresca, como croissants y muffins recién horneados. Además, para complementar la oferta dulce, incluimos una variedad de sándwiches gourmet, elaborados con ingredientes frescos y de alta calidad, que van desde opciones clásicas hasta combinaciones innovadoras. También ofrecemos alternativas saludables, como frutas de temporada y frutos secos, asegurando que cada invitado encuentre algo que le satisfaga. Con un enfoque en la presentación elegante y un servicio impecable, nuestro coffee break está diseñado para proporcionar un momento de descanso y disfrute, permitiéndote a ti y a tus invitados recargar energías de manera placentera y profesional.
+            </p>
+            <label for="coffee-break-options"  class="button-p">Ver propuestas</label>
+          <button><a href="#form" style="text-decoration: none; color: inherit;">Quiero este servicio</a></button>
+     </div>
+    </section>
+<!-- Checkbox para mostrar/ocultar contenido -->
+<input type="checkbox" id="coffee-break-options" class="coffee-break">
+
+<!-- Sección de grids para buffet criollo -->
+<div class="toggle-content-coffee" id="coffee-break-options-content">
+    <div class="grid-item">
+        <h4>Coffee Break Tradicional Peruano</h4>
+        <ul><b>Bebidas:</b>
+            <li>Cafe Peruano</li>
+            <li>Te de Muña</li>
+            <li>Chicha Morada</li>
+            <li>Agua de Limon con Menta</li>
+        </ul>
+        <ul><b>Bocadillos:</b>
+            <li>Empanaditas</li>
+            <li>Causa Limeña en Miniatura</li>
+            <li>Anticuchos</li>
+        </ul>
+        <ul><b>Frutas y Otros:</b>
+            <li>Frutas Frescas de Temporada</li>
+            <li>Yogur con Frutas y Miel</li>
+            <li>Choclo con Queso</li>
+        </ul>
+        <ul><b>Postres:</b>
+            <li>Suspiro a la Limeña</li>
+            <li>Mazamorra Morada</li>
+            <li>Tarta de Lucuma</li>
+        </ul>
+   </div>
+   <div class="grid-item">
+        <h4>Coffee Break Peruano Contemporaneo</h4>
+        <ul><b>Bebidas</b>
+            <li>Cafe de Especialidad Peruano</li>
+            <li>Infusion de Hierbas Andinas</li>
+            <li>Batidos de Frutas Peruanas</li>
+            <li>Limonada de Hierba Buena</li>
+        </ul>
+        <ul><b>Bocadillos</b>
+            <li>Quiche de Quinua y Vegetales</li>
+            <li>Mini Arepas</li>
+        </ul>
+        <ul><b>Frutas Y Otros</b>
+            <li>Ensalada de Frutas Exoticas</li>
+            <li>Yogur Griego con Granola</li>
+            <li>Nuez y Mix de Frutos Secos</li>
+        </ul>
+        <ul><b>Postres:</b>
+            <li>Mousse de Maracuya</li>
+            <li>Brownies de Chocolate con Lúcuma</li>
+            <li>Tartaletas de Frutas Tropicales</li>
+        </ul>
+    </div>
+    <div class="grid-item">
+        <h4>Coffee Break Clásico</h4>
+        <ul><b>Bebidas:</b>
+            <li>Cafe de Filtro o Espresso</li>
+            <li>Te Variado</li>
+            <li>Leche y Alternativas</li>
+        </ul>
+        <ul><b>Bocadillos</b>
+            <li>Croissants</li>
+            <li>Muffins</li>
+            <li>Sándwiches Miniatura</li>
+            <li>Bagels</li>
+        </ul>
+        <ul><b>Frutas y Otros</b>
+            <li>Frutas Frescas</li>
+            <li>Yogur Natural y Griego</li>
+            <li>Nuez y Frutos Secos</li>
+        </ul>
+        <ul><b>Postres:</b>
+            <li>Galletas Variadas</li>
+            <li>Brownies</li>
+        </ul>
+    </div>
+    <div class="grid-item">
+        <h4>Coffee Break Saludable</h4>
+        <ul><b>Bebidas:</b>
+            <li>Café Orgánico</li>
+            <li>Té verde y Té de Hierbas</li>
+            <li>Leches Vegetales</li>
+            <li>Agua Infusionda</li>
+        </ul>
+        <ul><b>Bocadillos</b>
+            <li>Pan Integral y Multigrano</li>
+            <li>Wraps Saludables</li>
+            <li>Barritas de Granola</li>
+            <li>Palitos de Verduras</li>
+        </ul>
+        <ul><b>Frutas y Otros</b>
+            <li>Frutas de Temporada</li>
+            <li>Yogur Griego con Miel</li>
+        </ul>
+        <ul><b>Postres:</b>
+            <li>Mini Muffins de Zanahoria y Nueces</li>
+            <li>Gelatina de Frutas</li>
+        </ul>
+    </div>
+    <div class="grid-item">
+        <h4>Coffee Break Gourmet</h4>
+        <ul><b>Bebidas:</b>
+            <li>Café Especialidad</li>
+            <li>Té Premium</li>
+            <li>Chocolate Caliente</li>
+            <li>Agua de Sabor</li>
+        </ul>
+        <ul><b>Bocadillos</b>
+            <li>Mini Quiches</li>
+            <li>Tartaletas Gourmet</li>
+            <li>Panecillos Artesanales</li>
+            <li>Canapes Variados</li>
+        </ul>
+        <ul><b>Frutas y Otros</b>
+            <li>Frutas Exóticas</li>
+            <li>Yogur de Vainilla y Frutas</li>
+            <li>Crudités</li>
+        </ul>
+        <ul><b>Postres:</b>
+            <li>Mini Éclairs</li>
+            <li>Cheesecake individual</li>
+        </ul>
+    </div>
+    <div class="grid-item">
+        <h4>Coffee Break Temático Internacional</h4>
+        <ul><b>Bebidas:</b>
+            <li>Café Italiano (Espresso y Capuccino)</li>
+            <li>Té Ingles (Earl Grey y Darjeeling)</li>
+            <li>Matcha Latte</li>
+            <li>Smoothies</li>
+        </ul>
+        <ul><b>Bocadillos</b>
+            <li>Paninis Italianos</li>
+            <li>Scones Britanicos</li>
+            <li>Dim Sum</li>
+            <li>Tapas Españolas</li>
+        </ul>
+        <ul><b>Frutas y Otros</b>
+            <li>Frutas Tropicales</li>
+            <li>Yogur con Granola y Frutas</li>
+        </ul>
+        <ul><b>Postres:</b>
+            <li>Tarta de Limon</li>
+            <li>Brownies de Chocolate y Nueces</li>
+        </ul>
+    </div>
+</div>
+        <br>
+        <div class="container-formulario" id="form">
+            <section class="info-section">
+                <p>¿Estás planeando un evento especial y quieres que sea inolvidable?.</p>
+                <p>¡Estamos aquí para hacer que tu evento sea memorable! Deja aqui tus datos y contactaremos contigo lo mas pronto posible 
+                    </p>
+                <p>Si prefieres hablar con nosotros directamente, llámanos al 952 987 963 o envíanos un correo a lamarestaurant@gmail.com.</p>
+            </section>
+            <section class="form-section">
+                <h2>Solicita Información sobre Nuestro Servicio de Catering</h2>
+                <p>¡Estamos aquí para ayudarte a planificar el evento perfecto! Completa el siguiente formulario y nuestro equipo se pondrá en contacto contigo pronto.</p>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label class="label" for="nombre">Nombre completo:</label>
+                        <input class="input" type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="correo">Correo electrónico:</label>
+                        <input class="input" type="email" id="correo" name="correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="telefono-fijo">Teléfono fijo:</label>
+                        <input class="input" type="tel" id="telefono-fijo" name="telefono-fijo">
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="celular">Celular:</label>
+                        <input class="input" type="tel" id="celular" name="celular">
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="servicio">Servicio:</label>
+                        <select class="select" id="servicio" name="servicio">
+                            <option value="">Seleccionar servicio...</option>
+                            <option value="catering">Buffet Criollo</option>
+                            <option value="decoracion">Desayunos</option>
+                            <option value="fotografia">Almuerzos y Cenas</option>
+                            <option value="fotografia">Cocteles</option><option value="fotografia">Coffee Break</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="n-personas">Número de personas:</label>
+                        <input class="input" type="number" id="n-personas" name="n-personas" min="1">
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="fecha-evento">Fecha del evento:</label>
+                        <input class="input" type="date" id="fecha-evento" name="fecha-evento">
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="lugar-evento">Lugar del evento:</label>
+                        <input class="input" type="text" id="lugar-evento" name="lugar-evento">
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="comentarios">Comentarios:</label>
+                        <textarea class="textarea" id="comentarios" name="comentarios" maxlength="500"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="button" type="submit">ENVIAR MENSAJE</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <br>
+ <footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <div class="footer-links">
+                <h4>Enlaces utiles</h4>
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
+                    <li><a href="catering.html">Catering</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Informacion de contacto</h4>
+                <ul>
+                    <li><a href="#">Direccion: Av. El porvenir Mz 12 lt 15</a></li>
+                    <li><a href="#">Telefono: 952 987 963</a></li>
+                    <li><a href="#">Correo electronico: lamarestaurant@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Politica de privacidad</a></li>
+                    <li><a href="#">Terminos de uso</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h4>Contactanos</h4>
+                <ul>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: #b75ff2;"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i></a>
+                </ul>
+              </div>
+        </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
